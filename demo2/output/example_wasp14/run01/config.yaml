@@ -37,10 +37,10 @@ Comments: >
 
 # The parameters shared between all orders
 Theta :
-    grid : [6300., 4.19, -0.31]
-    vz : -4.75122
-    vsini : 6.6935
-    logOmega: -12.72
+    grid : [6214.5, 4.22, -0.27]
+    vz : -4.799
+    vsini : 5.800
+    logOmega : -12.722
     Av: 0.0
 
 # Uncomment this line and set equal to the value of logg, if you'd like to fix it.
