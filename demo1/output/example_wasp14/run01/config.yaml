@@ -47,14 +47,14 @@ Theta :
 # fix_logg : 4.29
 
 Theta_jump :
-    grid : [3, 0.003, 0.001]
-    vz : 0.01
-    vsini : 0.01
-    logOmega: 1.e-4
+    grid : [16.57, 0.0646, 0.026]
+    vz : 0.043
+    vsini : 0.118
+    logOmega: 5.8e-4
     Av: 0.01
 
 cheb_degree: 4
-cheb_jump : 1.0e-4
+cheb_jump : 7.0e-4
 
 Phi :
     sigAmp : 1.0
@@ -62,9 +62,9 @@ Phi :
     l : 8.28
 
 Phi_jump :
-    sigAmp : 0.025
-    logAmp : 0.01
-    l : 0.25
+    sigAmp : 0.085
+    logAmp : 0.2
+    l : 4.5
 
 region_params:
     logAmp: -13.6
