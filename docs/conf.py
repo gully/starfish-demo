@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 # starfish-demo documentation build configuration file, created by
-# sphinx-quickstart on Thu Jan 21 10:51:32 2016.
+# sphinx-quickstart on Thu Jan 21 12:07:01 2016.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -111,7 +111,7 @@ todo_include_todos = False
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'alabaster'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
