@@ -1,0 +1,75 @@
+# YAML configuration script
+
+name: example_wasp14
+
+data:
+  grid_name: "PHOENIX"
+  files: ["data/WASP14/WASP14-2009-06-14.hdf5"]
+  # data/WASP14/WASP14-2010-03-29.hdf5
+  # data/WASP14/WASP14-2010-04-24.hdf5
+  instruments : ["TRES"]
+  orders: [21]
+  #orders: [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36]
+
+outdir : output/
+
+plotdir : plots/
+
+# The parameters defining your raw spectral library live here.
+grid:
+  raw_path: "/Users/gully/GitHub/Starfish/libraries/raw/PHOENIX/"
+  hdf5_path: "libraries/PHOENIX_TRES_test.hdf5"
+  parname: ["temp", "logg", "Z"]
+  key_name: "t{0:.0f}g{1:.1f}z{2:.1f}" # Specifies how the params are stored
+  # in the HDF5 file
+  parrange: [[6000, 6300], [4.0, 5.0], [-1.0, 0.0]]
+  wl_range: [5000, 5200]
+  buffer: 50. # AA
+  norm: True
+  air: True
+
+PCA:
+  path : "PHOENIX_TRES_PCA.hdf5"
+  threshold: 0.999 # Percentage of variance explained by components.
+  priors: [[2., 0.0075], [2., 0.75], [2., 0.75]] # len(parname) list of 2-element lists. Each 2-element list is [s, r] for the Gamma-function prior on emulator parameters
+
+#Longer strings can be written like this. This will be loaded under the "Comments" variable.
+Comments: >
+  WASP14 spectrum using emulator.
+
+# The parameters shared between all orders
+Theta :
+    grid : [6300., 4.19, -0.31]
+    vz : -4.75122
+    vsini : 6.6935
+    logOmega: -12.6949
+    Av: 0.0
+
+# Uncomment this line and set equal to the value of logg, if you'd like to fix it.
+# fix_logg : 4.29
+
+Theta_jump :
+    grid : [3, 0.003, 0.001]
+    vz : 0.01
+    vsini : 0.01
+    logOmega: 1.e-4
+    Av: 0.01
+
+cheb_degree: 4
+cheb_jump : 1.0e-4
+
+Phi :
+    sigAmp : 1.0
+    logAmp : -13.6
+    l : 20.
+
+Phi_jump :
+    sigAmp : 0.025
+    logAmp : 0.01
+    l : 0.25
+
+region_params:
+    logAmp: -13.6
+    sigma: 7.
+
+sigma_clip : 4. # how many sigma should we go in order to instantiate local kernels.
