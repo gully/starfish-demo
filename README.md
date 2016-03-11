@@ -15,3 +15,6 @@ This repo contains demos of the Starfish Spectral inference code.  I provide mos
 - **demo3** Information on [jump size tuning](https://github.com/iancze/Starfish/issues/31) with a transition probability matrix.
 - **demo4** Resolution to [Starfish Issue #26](https://github.com/iancze/Starfish/issues/26) that occurred when `sigAmp` goes negative.
 - **demo5** A code snippet for how to [save intermediate results](https://github.com/iancze/Starfish/issues/40) in long MCMC chains.  
+- **demo6** How to include a prior on the stellar parameters [Issue 32](https://github.com/iancze/Starfish/issues/32).
+- **demo7** Experiments of using flux-calibrated models instead of normalized models [Issue 38](https://github.com/iancze/Starfish/issues/32).
+- **demo8** How to include air or vacuum wavelengths [Issue 57](https://github.com/iancze/Starfish/issues/32).  
