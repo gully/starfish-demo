@@ -19,4 +19,4 @@ This repo contains demos of the Starfish Spectral inference code.  I provide mos
 - **demo7** Experiments of using flux-calibrated models instead of normalized models [Issue 38](https://github.com/iancze/Starfish/issues/32).
 - **demo8** How to include air or vacuum wavelengths [Issue 57](https://github.com/iancze/Starfish/issues/57).  
 - **demo9** Switching from using Gibbs sampling in 6+6 parameters to ensemble sampling in 12 parameters.
-- **demo10** Model composite spectra from binary stars with two full-blown sets of intrinsic and extrinsic stellar parameters, a hack from Cool Stars 19 Hack Day.
+- **demo10** Model composite spectra from binary stars with two full-blown sets of intrinsic and extrinsic stellar parameters, a hack from Cool Stars 19 Hack Day [Issue 68](https://github.com/iancze/Starfish/issues/68)
